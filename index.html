@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Instant.edu</title>
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="img/png" href="logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Blaka&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="main.js"></script>
+</head>
+<body class="gradient-background">
+  
+    <nav class="navbar">
+        <!-- LOGO -->
+        <div class="logo">Instant.<span class="edu">edu</span></div>
+        <!-- NAVIGATION MENU -->
+        <ul class="nav-links">
+          <!-- USING CHECKBOX HACK -->
+          <input type="checkbox" id="checkbox_toggle" />
+          <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+          <!-- NAVIGATION MENUS -->
+          <div class="menu">
+            <li><a href="/">Home</a></li>
+            <li><a onclick="developer()">Developer</a></li>
+            <li><a onclick="signup()">Start</a></li>
+
+            <li><a onclick="about()">About</a></li>
+          </div>
+        </ul>
+      </nav><br><br><br><br>
+      <h1 style="margin-left: 100px;">Australia's number 1 education platform!</h1><br>
+      <div style="width: 40%; margin-left: 100px;">
+      <h3>Instant.edu is the best education platform because allows Teachers & Students to post a subject topic or to ask any queries. We inspire others to be the smartest they can for a brighter future!</h3>
+      <center>
+      <div style="width: 40%;">
+        <br>
+      <button style="float: left; width: 200%; " class="btn-signup" onclick="signup()">Start</button>     
+     
+    </div>
+      </center>
+    </div>
+</body>
+</html>

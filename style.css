@@ -1,0 +1,159 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   }
+   a {
+    text-decoration: none;
+   }
+   li {
+    list-style: none;
+   }
+
+body
+{
+    font-family: 'Rajdhani', sans-serif;
+    color: white;
+}
+
+.edu{
+    font-family: 'Rajdhani', sans-serif;
+
+}
+
+   /* NAVBAR STYLING STARTS */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: transparent;/*#545ab2*/
+    
+    color: #fff;
+   }
+   .nav-links a {
+    color: #fff;
+   }
+   /* LOGO */
+   .logo {
+    font-size: 50px;
+    font-family: Blaka, cursive;
+   }
+   /* NAVBAR MENU */
+   .menu {
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+   }
+   .menu li:hover {
+    background-color: #5eb9ea;
+    border-radius: 5px;
+    transition: 0.3s ease;
+   }
+   .menu li {
+    padding: 5px 14px;
+   }
+
+   /*RESPONSIVE NAVBAR MENU STARTS*/
+/* CHECKBOX HACK */
+input[type=checkbox]{
+    display: none;
+   } 
+   /*HAMBURGER MENU*/
+   .hamburger {
+    display: none;
+    font-size: 24px;
+    user-select: none;
+   }
+   /* APPLYING MEDIA QUERIES */
+   @media (max-width: 768px) {
+   .menu { 
+    display:none;
+    position: absolute;
+    background-color:transparent; /*#545ab2*/
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding: 16px 0;
+   }
+   .menu li:hover {
+    display: inline-block;
+    background-color:#5eb9ea;
+    transition: 0.3s ease;
+   }
+   .menu li + li {
+    margin-top: 12px;
+   }
+   input[type=checkbox]:checked ~ .menu{
+    display: block;
+   }
+   .hamburger {
+    display: block;
+   }
+   .dropdown {
+    left: 50%;
+    top: 30px;
+    transform: translateX(35%);
+   }
+   .dropdown li:hover {
+    background-color: #5eb9ea;
+    
+   }
+   }
+
+   .gradient-background {
+    background: linear-gradient(271deg,#e186de,#5eb9ea,#6000ff,#6809f3,#f30909,#f36509,#59f309);
+    background-size: 420% 420%;
+    animation: gradient-animation 7s ease infinite;
+  }
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  .btn-signup{
+    height: 40px;
+    width: 80px;
+    background-color: #5eb9ea;
+    border-style: solid;
+    border-radius: 10px;
+  }
+
+  .btn-signup:hover{
+    background-color: #509fc9;
+    text-decoration: underline;
+  }
+
+  .btn-login{
+    height: 40px;
+    width: 80px;
+    background-color: #5900ff;
+    border-style: solid;
+    border-radius: 10px;
+  }
+
+  .btn-login:hover{
+    background-color: #4800ce;
+    text-decoration: underline;
+  }
+
+  input{
+    font-size: 20px;
+    text-align: center;
+  }
+
+  
+
+   
+
+   

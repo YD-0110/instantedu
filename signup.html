@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup - Instant.edu</title>
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="img/png" href="logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Blaka&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap" rel="stylesheet">
+    <script src="https://www.recaptcha.net/recaptcha/api.js" async defer></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="main.js"></script>
+</head>
+<body class="gradient-background">
+    <center>
+        <div style="width: 40%; margin-top: 100px; background-color: rgb(201, 201, 201); border: solid gray; border-radius: 10px;" class="container">
+        <h1>Signup for <span style="font-family: Blaka, cursive;">Instant</span>.edu:</h1>
+        <br><br>
+        <h4 style="float: left;">User Name:</h4>
+        <br><br>
+        <input type="text" style="float: left; color: black; width: 80%; border-style: solid; border: white 1px; border-radius: 5px;" id="user_name">
+        <br><br>
+        <h4 style="float: left;">Password:</h4>
+        <br><br>
+        <input type="password" style="float: left; color: black; width: 80%; border-style: solid; border: white 1px; border-radius: 5px;" id="password">
+        <br><br><select name="levelofoccupation" id="level">
+            <option value="Teacher">Teacher</option>
+            <option value="Student">Student</option>
+            
+          </select><br><br><div
+        class="g-recaptcha"
+        data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
+        data-callback="onRecaptchaSuccess"
+        data-expired-callback="onRecaptchaResponseExpiry"
+        data-error-callback="onRecaptchaError"
+      >
+     
+      </div>
+      <br><br>
+      <Button class="btn-signup" onclick="chatpage()">Start</Button>
+      <br><br><br>
+        </div>
+    </center>
+
+
+    
+
+</body>
+</html>
